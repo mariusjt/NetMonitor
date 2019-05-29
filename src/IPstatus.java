@@ -1,5 +1,3 @@
-package com.mkyong;
-
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
@@ -11,7 +9,7 @@ public class IPstatus {
         try {
 
             ip = InetAddress.getLocalHost();
-            System.out.println("Current IP address : " + ip.getHostAddress());
+            System.out.println("Your current IP address : " + ip.getHostAddress());
 
         } catch (UnknownHostException e) {
 
