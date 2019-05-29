@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class PingIP {
     private int ping;
+    private int average;
 
     private void  runSystemCommand(String command) {
 
@@ -18,12 +19,17 @@ public class PingIP {
             long start = System.currentTimeMillis();
             long end = start+5000;
             String os = System.getProperty("os.name").toLowerCase();
+            average = 0;
+            int counts = 0;
+            int total = 0;
             if (os.contains("win")){
-                while ((s = inputStream.readLine()) != null && System.currentTimeMillis() < end) {
+                while ((s = inputStream.readLine()) != null && System.currentTimeMillis() < end && !s.contains("statistics")) {
                     if (s.contains("ms")) {
                         System.out.println(s);
-                        ping = Integer.parseInt(s.substring((s.length() - 5), s.length() - 3));
-                        System.out.println(ping);
+                        counts++;
+                        total = total + Integer.parseInt(s.substring((s.length() - 5), s.length() - 3));
+                        average = total/counts;
+                        System.out.println(average);
                         pinglist.add(ping);
                     }
                 }
@@ -33,13 +39,15 @@ public class PingIP {
                     //System.out.println(s);
                     if (s.contains("ms")) {
                         System.out.println(s);
-                        ping = Integer.parseInt(s.substring((s.length() - 9), s.length() - 7));
-                        System.out.println(ping);
+                        counts++;
+                        total = total + Integer.parseInt(s.substring((s.length() - 9), s.length() - 7));
+                        average = total/counts;
+                        System.out.println(average);
                         pinglist.add(ping);
-                        //s.regionMatches().;
                     }
                 }
             }
+
             for (Object o : pinglist) {
                 System.out.println("ping = " + o);
             }
@@ -59,7 +67,7 @@ public class PingIP {
     */
     public int ping(){
         runSystemCommand("ping " + "google.com");
-        return ping;
+        return average;
     }
 
 }
