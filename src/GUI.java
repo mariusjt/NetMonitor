@@ -5,21 +5,13 @@ import java.awt.*;
 public class GUI extends JFrame {
     private JLabel item1;
 
-    public GUI()
-    {
+    public GUI() {
         super("NETWORK TESTER");
         setLayout(new FlowLayout());
 
-
+        PingIP pinger = new PingIP();
         item1 = new JLabel("this is a sentence");
-        item1.setToolTipText("Your ping is: ");
+        item1.setToolTipText("Your ping is: " + pinger.ping());
         add(item1);
-
-        GUI bucky = new GUI();
-        bucky.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        bucky.setSize(275, 180);
-        bucky.setVisible(true);
-
     }
-
 }
