@@ -10,12 +10,11 @@ public class Client {
     private OutputStream out;
     private int count;
     long speed;
-    private boolean tested = false;
-    ArrayList speedList = new ArrayList(long);
+    private boolean tested;
 
-    public Client(int fileSize) throws IOException {
+    public Client(int fileSize, String host, int port) throws IOException {
         System.out.println("Starting file transfer client!");
-        socket = new Socket("127.0.0.1", 3333);
+        socket = new Socket(host, port);
         FileGen fg = new FileGen();
         file = fg.getFile(fileSize);
         byte[] bytes = new byte[16 * 1024];
