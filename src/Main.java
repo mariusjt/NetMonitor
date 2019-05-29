@@ -7,10 +7,9 @@ public class Main {
   /*      System.out.println("Starting server!");
         Server rx = new Server(3333);
 */
-
-        GUI bucky = new GUI();
-        bucky.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        bucky.setSize(275, 180);
-        bucky.setVisible(true);
+        GUI gui = new GUI();
+        gui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        gui.setSize(480, 360);
+        gui.setVisible(true);
     }
 }
