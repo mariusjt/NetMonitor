@@ -1,4 +1,4 @@
-import jdk.internal.jline.internal.Log;
+import jdk.internal.instrumentation.Logger;
 
 import java.net.*;
 import java.util.Enumeration;
@@ -17,12 +17,11 @@ public class getIP {
             {
                 InetAddress i = (InetAddress) ee.nextElement();
                 String currentAddress = i.getHostAddress();
+                Logger logger = null;
                 logger.trace("IP address "+currentAddress+ " found");
-                if(!i.isSiteLocalAddress()&&!i.isLoopbackAddress() && validate(currentAddress)){
+                if(!i.isSiteLocalAddress()&&!i.isLoopbackAddress() && validate(currentAddress))
                     ipToReturn = currentAddress;
-                }else{
-                    System.out.println("Address not validated as public IPv4");
-                }
+                else System.out.println("Address not validated as public IPv4");
 
             }
         }
