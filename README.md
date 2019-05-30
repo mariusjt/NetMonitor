@@ -28,7 +28,7 @@ The maintenance within the project is to deliver a product concluding the subjec
 Further maintenance will be unlikely, but the project is open for development and iteration.
 
 ## Code Style
-Standard Javascript codestyle
+Standard Javascript code style
 
 ## Screenshots
 ## Technology used
@@ -51,8 +51,8 @@ No test examples added.
 Worked towards functionally rather than uptime/bugs
 
 ## How to use
-To use our project run the Main within the project in terminal for MacOSX
- and run it within command promt on any windows version allowing JDK 11.
+To use our project run the Main within the project in terminal for Mac OS X
+ and run it within command prompt on any windows version allowing JDK 11.
 
  ## Contribute
  ##### Getting started:  
@@ -66,7 +66,13 @@ To use our project run the Main within the project in terminal for MacOSX
  -Adding tests to the methods within the program.
 
  ##Credits
- AltCtrl
+ ####AltUnderCtrl
+ #####Members:
+ Jostein Våga Rygg   
+ Joakim Schjølberg   
+ Marius Tjøstheim   
+ Kristian Jul-Larsen   
+ Henrik Lindseth
 
  ## License
  GPL v2
