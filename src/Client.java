@@ -16,6 +16,7 @@ public class Client {
      * @param host Target IP
      * @param port Target port
      */
+    // Creates a client storing host port
     Client(String host, int port)  {
         System.out.println("Starting file transfer client!");
         try {
