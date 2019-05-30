@@ -2,6 +2,7 @@ import java.net.Inet4Address;
 import java.net.Inet6Address;
 import java.net.UnknownHostException;
 
+/* Simple yet efficient method for IP catching. */
 public class GetIP {
 
     /* Possibly idea is to change this format. Third row is not struck
