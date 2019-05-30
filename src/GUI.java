@@ -5,6 +5,7 @@ import java.awt.event.ActionListener;
 import java.awt.SystemTray;
 import java.awt.TrayIcon;
 import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
@@ -16,6 +17,8 @@ public class GUI extends JFrame {
     PingIP pinger;
     TrayIcon trayIcon;
     long spamTimeout;
+    String ip;
+    Button getIp;
 
     public GUI() {
         super("NETWORK TESTER");
@@ -32,6 +35,23 @@ public class GUI extends JFrame {
             }
         });
         add(p);
+        TextField tfip = new TextField(30);
+        Button ipbutton = new Button("Check IP");
+        ipbutton.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent e) {
+                IPv ipv = new IPv();
+                try {
+                    ip = ipv.test();
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                } catch (InterruptedException e1) {
+                    e1.printStackTrace();
+                }
+                tfip.setText(ip);
+            }
+        });
+        add(tfip);
+        add(ipbutton);
         SystemTray tray = SystemTray.getSystemTray();
         //Image image = Toolkit.getDefaultToolkit().createImage("icon.png");
         Image image = Toolkit.getDefaultToolkit().getImage(System.getProperty("user.dir") + File.separator + "icon.png");
