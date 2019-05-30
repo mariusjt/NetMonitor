@@ -1,7 +1,7 @@
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
-public class IPstatus {
+public class CurrentIP {
 
     public static void main(String[] args) {
 
