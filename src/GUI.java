@@ -33,7 +33,6 @@ public class GUI extends JFrame {
         });
         add(p);
         SystemTray tray = SystemTray.getSystemTray();
-        //Image image = Toolkit.getDefaultToolkit().createImage("icon.png");
         Image image = Toolkit.getDefaultToolkit().getImage(System.getProperty("user.dir") + File.separator + "icon.png");
 
         trayIcon = new TrayIcon(image, "Tray Demo");
@@ -44,14 +43,16 @@ public class GUI extends JFrame {
         } catch (AWTException e) {
             e.printStackTrace();
         }
+        //Runs pingcheck every 5 seconds
         ScheduledExecutorService ses = Executors.newSingleThreadScheduledExecutor();
         ses.scheduleAtFixedRate(new Runnable() {
-            /*Display a warning if ping is higher than preferred.*/
+
             @Override
             public void run() {
                 ping();
                 if (ping > 5){
                     if (System.currentTimeMillis() > spamTimeout) {
+                        /*Display a warning if ping is higher than preferred.*/
                         trayIcon.displayMessage("Ping warning", "Your ping is: " + ping, TrayIcon.MessageType.INFO);
                         spamTimeout = System.currentTimeMillis() + 10000;
                     }
