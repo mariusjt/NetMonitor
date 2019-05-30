@@ -10,7 +10,7 @@ String ipv4;
         String os = System.getProperty("os.name").toLowerCase();
         String cmd = "";
         if (os.contains("win")) {
-            cmd = "ioconfig/all";
+            cmd = "ipconfig /all";
         }
         else if (os.contains("mac")) {
             cmd = "ifconfig";
