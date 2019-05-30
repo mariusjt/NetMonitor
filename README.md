@@ -12,12 +12,12 @@ bar to show how much speed is available)
 - Display number of packets going in/out at any time
 - Adjustable parameters for checks (file sizes, timeouts)
 
-# Initial planned frameworks
+## Initial planned frameworks
 - Simple java command line application
 - SQL hook for storing and presenting history
 - XML/JSON API to get data on other devices
 
-# Motivation
+## Motivation
 NetMonitor was created to be a part of a open source project at the University of Agder. 
 More specifically it exists as a contribution of an opensource project for students in the subject IS-213 OPEN SOURCE
 to contribute as an introductary idea of the open source working method.  
@@ -25,15 +25,15 @@ The developers of the project felt that it would be useful to have some sort of 
 The maintenance within the project is to deliver a product concluding the subject IS-213. 
 Further maintenance will be unlikely, but the project is open for development and iteration.
 
-# Code Style
+## Code Style
 Standard Javascript codestyle
 
-# Screenshots
-# Technology used
+## Screenshots
+## Technology used
 Built with IntelleJ, by JetBrains
 Developed with JDK 11
 
-# Features
+## Features
 - DHCP/IP status
 - WAN/internet status
 - Internet speed (run a speedtest on boot)
@@ -41,16 +41,26 @@ Developed with JDK 11
 - Display number of packets going in/out at a specific scenario
 
 
-# Installation / Runing
+## Installation / Runing
 Provided by a Java Main which can be run in terminal.
 
-# Tests
+## Tests
 No test examples added. 
 Worked towards functionally rather than uptime/bugs
 
-# How to use 
+## How to use 
 To use our project run the Main within the project in terminal for MacOSX
  and run it within command promt on any windows version allowing JDK 11.
  
+ ## Contribute
+ #####Getting started:  
+ This application is made with IntelliJ. Here is a great guide for IntelliJ: https://www.jetbrains.com/idea/documentation/ 
  
+ #####We wish for people to contribute with:  
+ -Improvement of functions through GUI  
+ -Adding features mentioned above beneath "NetMonitor" into the 
+ program which currently are not found in Features.  
+ -Adding tests to the methods within the program.
+ 
+  
 
