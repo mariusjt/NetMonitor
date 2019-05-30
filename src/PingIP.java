@@ -45,11 +45,12 @@ public class PingIP {
                 System.out.println("ping = " + o);
             }
 
+
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
-/*
+
     public static void main(String[] args) {
 
         String ip = "google.com";
@@ -57,7 +58,7 @@ public class PingIP {
 
 
     }
-    */
+
     public int ping(){
         runSystemCommand("ping " + "google.com");
         return ping;
