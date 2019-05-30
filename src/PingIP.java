@@ -44,7 +44,7 @@ public class PingIP {
             e.printStackTrace();
         }
     }
-
+    // Method that calculates PING values.
     private int getTotal(int counts, int total, String noString) {
         if (noString.contains("=") || noString.contains(" ")){
             noString = noString.substring(1);
