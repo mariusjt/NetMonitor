@@ -43,8 +43,6 @@ public class GUI extends JFrame {
                     ip = ipv.test();
                 } catch (IOException e1) {
                     e1.printStackTrace();
-                } catch (InterruptedException e1) {
-                    e1.printStackTrace();
                 }
                 tfip.setText(ip);
             }
