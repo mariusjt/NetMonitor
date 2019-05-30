@@ -1,8 +1,9 @@
 
-![](Images/LogoAC.png)
+
 
 # NetMonitor
-Application for monitoring network status
+![](Images/LogoAC.png)   
+#### Application for monitoring network status
 - DNS status
 - WAN/internet status
 - DHCP/IP status
@@ -28,7 +29,7 @@ The maintenance within the project is to deliver a product concluding the subjec
 Further maintenance will be unlikely, but the project is open for development and iteration.
 
 ## Code Style
-Standard Javascript codestyle
+Standard Javascript code style
 
 ## Screenshots
 ## Technology used
@@ -50,9 +51,9 @@ Provided by a Java Main which can be run in terminal.
 No test examples added.
 Worked towards functionally rather than uptime/bugs
 
-## How to use
-To use our project run the Main within the project in terminal for MacOSX
- and run it within command promt on any windows version allowing JDK 11.
+## How to use?
+To use our project run the Main within the project in terminal for Mac OS X
+ and run it within command prompt on any windows version allowing JDK 11.
 
  ## Contribute
  ##### Getting started:  
@@ -65,8 +66,14 @@ To use our project run the Main within the project in terminal for MacOSX
  program which currently are not found in Features.  
  -Adding tests to the methods within the program.
 
- ##Credits
- AltCtrl
+ ## Credits   
+ #### AltUnderCtrl   
+ ##### Members:   
+ Jostein Våga Rygg   
+ Joakim Schjølberg   
+ Marius Tjøstheim   
+ Kristian Jul-Larsen   
+ Henrik Lindseth
 
  ## License
  GPL v2
