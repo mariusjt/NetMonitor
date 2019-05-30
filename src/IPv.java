@@ -28,7 +28,7 @@ String ipv4;
         BufferedReader reader = new BufferedReader(new InputStreamReader(is));
 
         String s;
-
+        // IPv4 retriever for mac.
         if (os.contains("mac")) {
             while ((s = reader.readLine()) != null) {
                 if (s.contains("broadcast")) {
@@ -44,6 +44,7 @@ String ipv4;
                 ipv4 = sb.toString();
                 }
             }
+        // IPv4 retriever for win.
         } else if (os.contains("win")) {
             while ((s = reader.readLine()) != null) {
                 if (s.contains("IPv4")&!s.contains("Temporary")&!s.contains("Link-local")) {
