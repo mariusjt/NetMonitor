@@ -11,7 +11,7 @@ public class Client {
     private int count;
     long speed;
     private boolean tested;
-
+    //Creates a client which stores host with port in a socket
     Client(String host, int port)  {
         System.out.println("Starting file transfer client!");
         try {
@@ -26,7 +26,7 @@ public class Client {
             e.printStackTrace();
         }
     }
-
+    //Performs a speed test for a specific file
     void speedTest(int fileSize) throws IOException {
         FileGen fg = new FileGen();
         file = fg.getFile(fileSize);
@@ -48,12 +48,12 @@ public class Client {
         tested = true;
         in.close();
     }
-
+    //Closes the socket
     public void close() throws IOException {
         out.close();
         socket.close();
     }
-
+    //Confirms the speed tested in the transfer
     public long getSpeed(){
         if(tested) {
             return speed;
