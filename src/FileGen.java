@@ -24,6 +24,7 @@ int size;
         for (int i = 0; i < 150; i++) {
             random = random + ALPHA_NUM.charAt(r.nextInt(ALPHA_NUM.length()));
         }
+        //  Initiates creation of a file
         File file = new File(curDir + File.separator + "test" + mb + "MB.txt");
         if( file.createNewFile()) {
             FileWriter fw = new FileWriter(file);
