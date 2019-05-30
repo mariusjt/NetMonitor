@@ -66,9 +66,9 @@ To use our project run the Main within the project in terminal for Mac OS X
  program which currently are not found in Features.  
  -Adding tests to the methods within the program.
 
- ##Credits
- ####AltUnderCtrl
- #####Members:
+ ##Credits   
+ ####AltUnderCtrl   
+ #####Members:   
  Jostein Våga Rygg   
  Joakim Schjølberg   
  Marius Tjøstheim   
