@@ -10,7 +10,7 @@ String ipv4;
         String os = System.getProperty("os.name").toLowerCase();
         String cmd = "";
         if (os.contains("win")) {
-            cmd = "ipconfig /all";
+            cmd = "ipconfig";
         }
         else if (os.contains("mac")) {
             cmd = "ipconfig";
@@ -41,8 +41,21 @@ String ipv4;
             }
         } else if (os.contains("win")) {
             while ((s = reader.readLine()) != null) {
-                if (s.contains("IPv")) {
+                if (s.contains("IPv4")&!s.contains("Temporary")&!s.contains("Link-local")) {
                     System.out.println(s);
+                    //s = s.substring(s.length());
+                    StringBuilder sb = new StringBuilder();
+                    for (int i = s.length()-1; i > 0; i--){
+                        char c = s.charAt(i);
+                        if(Character.toString(c).contains(":")){
+                            break;
+                        }
+                        if (Character.isDigit(c)|| Character.toString(c).contains(".")){
+                            sb.append(c);
+                        }
+                    }
+                    System.out.println("IPv4: " + sb.toString());
+                    ipv4 = sb.toString();
                 }
             }
         }   return ipv4;
