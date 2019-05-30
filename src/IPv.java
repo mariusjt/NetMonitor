@@ -15,7 +15,8 @@ String ipv4;
 
     public String test() throws IOException {
 
-        //Checks what kind of OS the system is running
+        // Specifies which string to be used.
+
 
         String os = System.getProperty("os.name").toLowerCase();
         String cmd = "";
