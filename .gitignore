@@ -28,3 +28,7 @@ test2MB\.txt
 test*MB\.txt
 
 received\.txt
+
+out/
+
+tmp\.txt
