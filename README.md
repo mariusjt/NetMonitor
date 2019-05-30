@@ -1,7 +1,8 @@
 
-![](Images/LogoAC.png)
+
 
 # NetMonitor
+![](Images/LogoAC.png)   
 Application for monitoring network status
 - DNS status
 - WAN/internet status
