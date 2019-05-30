@@ -38,7 +38,7 @@ In the GUI class, keep all related items bunched together. I.e: Related buttosn 
 
 ## Screenshots
 
-![](Images/GUI.png)
+![](Images/Screenshots/GUI.png)
  
 
 ## Technology used
