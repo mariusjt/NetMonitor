@@ -79,5 +79,5 @@ To use our project run the Main within the project in terminal for Mac OS X
  Henrik Lindseth
 
  ## License
- [GPL v2 CE](LICENSE)   
+ GPL v2 CE [*LICENSE*](LICENSE)   
  
