@@ -28,7 +28,7 @@ public class PingIP {
                     }
                 }
             }
-            else if (os.contains("osx")) {
+            else if (os.contains("os x")) {
                 while ((s = inputStream.readLine()) != null && System.currentTimeMillis() < end) {
                     //System.out.println(s);
                     if (s.contains("ms")) {
@@ -48,15 +48,6 @@ public class PingIP {
             e.printStackTrace();
         }
     }
-/*
-    public static void main(String[] args) {
-
-        String ip = "google.com";
-        runSystemCommand("ping " + ip);
-
-
-    }
-    */
     public int ping(){
         runSystemCommand("ping " + "google.com");
         return ping;
