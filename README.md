@@ -46,7 +46,8 @@ Github Desktop & GitKraken
 
 
 ## Installation / Running
-Provided by a Java Main which can be run in terminal.
+Provided by a Java Main:   
+Executed in Terminal / Command prompt
 
 ## Tests
 No test examples added.
