@@ -50,7 +50,7 @@ Provided by a Java Main which can be run in terminal.
 No test examples added.
 Worked towards functionally rather than uptime/bugs
 
-## How to use
+## How to use?
 To use our project run the Main within the project in terminal for Mac OS X
  and run it within command prompt on any windows version allowing JDK 11.
 
