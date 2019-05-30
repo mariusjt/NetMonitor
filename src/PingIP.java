@@ -19,6 +19,7 @@ public class PingIP {
             average = 0;
             int counts = 0;
             int total = 0;
+            // Checks if the user is operating on Windows Operating system.
             if (os.contains("win")){
                 while ((s = inputStream.readLine()) != null && System.currentTimeMillis() < end && !s.contains("statistics")) {
                     if (s.contains("ms")) {
@@ -29,6 +30,7 @@ public class PingIP {
                     }
                 }
             }
+            // Checks if the user is operating on Mac OS X Operating system.
             else if (os.contains("os x")) {
                 while ((s = inputStream.readLine()) != null && System.currentTimeMillis() < end) {
                     if (s.contains("ms")) {
