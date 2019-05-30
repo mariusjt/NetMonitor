@@ -34,7 +34,7 @@ Standard Javascript code style
 ## Screenshots
 
 ![](Images/IndicatorMac.png) 
-
+![](Images/Screenshots/GUI.png)
  
 
 ## Technology used
