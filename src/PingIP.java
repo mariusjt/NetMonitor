@@ -13,10 +13,12 @@ public class PingIP {
                     new InputStreamReader(p.getInputStream()));
 
             String s = "";
+
             // reading output stream of the command
             long start = System.currentTimeMillis();
             long end = start+5000;
             String os = System.getProperty("os.name").toLowerCase();
+
             average = 0;
             int counts = 0;
             int total = 0;

@@ -3,9 +3,9 @@ import java.awt.*;
 import java.io.IOException;
 import java.awt.event.*;
 
-
 public class Main extends GUI{
     public static void main(String[] args) throws IOException, InterruptedException {
+
   /*     System.out.println("Starting server!");
         Server rx = new Server(3333); */
    /*     class GUI extends JFrame {
