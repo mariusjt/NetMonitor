@@ -34,7 +34,7 @@ Standard Javascript code style
 ## Screenshots
 ## Technology used
 Built with [IntelliJ](https://www.jetbrains.com/idea/), by JetBrains   
-Developed with JDK 11     
+Developed with [JDK 11](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html)     
 Github Desktop & GitKraken
 
 ## Features
