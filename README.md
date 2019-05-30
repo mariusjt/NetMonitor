@@ -22,7 +22,7 @@ bar to show how much speed is available)
 
 ## Motivation
 NetMonitor was created to be a part of a open source project at the University of Agder.
-More specifically it exists as a contribution of an open source project for students in the subject IS-213 OPEN SOURCE
+More specifically it exists as a contribution of an open source project for students in the subject [IS-213 OPEN SOURCE](https://www.uia.no/en/studieplaner/topic/IS-213-1)
 to contribute as an introductory idea of the open source working method.  
 The developers of the project felt that it would be useful to have some sort of tool to easily access the functions mentioned above beneath "NetMonitor".
 The maintenance within the project is to deliver a product concluding the subject IS-213.
