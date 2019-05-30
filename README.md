@@ -16,3 +16,9 @@ bar to show how much speed is available)
 - Simple java command line application
 - SQL hook for storing and presenting history
 - XML/JSON API to get data on other devices
+
+# Motivation
+NetMonitor was created to be a part of a open source project at the University of Agder. 
+More specifically it exists as a contribution of an opensource project for students
+to contribute and add to introductary to the idea of open source. 
+We felt that it would be useful to have some sort of tool to easily access the functions mentioned above below "NetMonitor".
