@@ -11,7 +11,7 @@ String ipv4;
      * @throws IOException Could be lack of permissions
      */
     public String test() throws IOException {
-
+        // Specifies which string to be used.
         String os = System.getProperty("os.name").toLowerCase();
         String cmd = "";
         if (os.contains("win")) {
