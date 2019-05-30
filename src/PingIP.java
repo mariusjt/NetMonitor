@@ -3,7 +3,7 @@ import java.io.InputStreamReader;
 
 public class PingIP {
     private int average;
-    //  Checks speed of the ntetwork currently connedted within the DB desired Database.
+    //  Checks speed of the network currently connected within the DB desired Database.
     private void  runSystemCommand(String command) {
 
         try {
