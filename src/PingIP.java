@@ -56,15 +56,7 @@ public class PingIP {
             e.printStackTrace();
         }
     }
-/*
-    public static void main(String[] args) {
 
-        String ip = "google.com";
-        runSystemCommand("ping " + ip);
-
-
-    }
-    */
     public int ping(){
         runSystemCommand("ping " + "google.com");
         return average;
