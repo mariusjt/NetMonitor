@@ -34,7 +34,7 @@ Use standard "get"/"set"Field names for methods, and make sure methods can retur
 
 Keep information hidden as much as possible, and only pass values with getters and setters.
 
-In the GUI class, keep all related items bunched together. I.e: Related buttosn and panels should be close, and the draw methods should be close to the element definitions.
+In the GUI class, keep all related items bunched together. I.e: Related buttons and panels should be close, and the draw methods should be close to the element definitions.
 
 ## Screenshots
 ![](Images/Screenshots/GUI.png) 
