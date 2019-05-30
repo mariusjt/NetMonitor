@@ -70,7 +70,7 @@ public class GUI extends JFrame {
             @Override
             public void run() {
                 ping();
-                if (ping > 5){
+                if (ping > 150){
                     if (System.currentTimeMillis() > spamTimeout) {
                         trayIcon.displayMessage("Ping warning", "Your ping is: " + ping, TrayIcon.MessageType.INFO);
                         spamTimeout = System.currentTimeMillis() + 10000;
