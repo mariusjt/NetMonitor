@@ -33,8 +33,9 @@ Standard Javascript code style
 
 ## Screenshots
 ## Technology used
-Built with IntelliJ, by JetBrains
-Developed with JDK 11
+Built with IntelliJ, by JetBrains   
+Developed with JDK 11     
+Github Desktop & GitKraken
 
 ## Features
 - DHCP/IP status
