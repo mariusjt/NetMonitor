@@ -37,19 +37,19 @@ public class Client {
      * Runs speedtest with automatically fetched or generated file
      */
     void speedTest(int fileSize) throws IOException {
-        //Gets file from FileGen
+        //  Gets file from FileGen
         FileGen fg = new FileGen();
         file = fg.getFile(fileSize);
         byte[] bytes = new byte[16 * 1024];
         in = new FileInputStream(file);
         count = 0;
-        //gets time for speedtest calculation
+        //  Gets time for speedtest calculation
         long start = System.currentTimeMillis();
-        //sends file
+        //  Sends file
         while ((count = in.read(bytes)) > 0) {
             out.write(bytes, 0, count);
         }
-        //calculates and prints time
+        //  Calculates and prints time
         long end = System.currentTimeMillis();
         final long BYTES_IN_KB = 1024;
         long transferred = BYTES_IN_KB * fileSize;
