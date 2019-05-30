@@ -4,6 +4,9 @@ import java.net.Socket;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
+/**
+ * Server for receiving files
+ */
 public class Server {
     ServerSocket serverSocket;
     Socket socket;
@@ -16,6 +19,11 @@ public class Server {
     File file = new File(curDir + File.separator + "received.txt");
     File tmp;
 
+    /**
+     * @param port Port to open on instance
+     * @throws IOException
+     * @throws InterruptedException
+     */
     public Server(int port) throws IOException, InterruptedException {
         serverSocket = null;
         this.port = port;
@@ -33,6 +41,12 @@ public class Server {
         }
         getInput();
     }
+
+    /**
+     * Opens socket and writes file
+     * @throws IOException
+     * @throws InterruptedException
+     */
     private void getInput() throws IOException, InterruptedException {
         if(serverSocket == null) {
             try {
@@ -105,6 +119,10 @@ public class Server {
         getInput();
     }
 
+    /**
+     * Stops and closes server
+     * @throws IOException
+     */
     public void stop() throws IOException {
         br.close();
         out.close();

@@ -11,6 +11,11 @@ int size;
     private static final int MEGA_BYTE = 1024*1024;
 
 
+    /**
+     * @param mb Filesize in MB to be generated
+     * @return File object
+     * @throws IOException Could be lack of permissions or storage issues
+     */
     public File getFile(int mb) throws IOException {
         System.out.println("cur dir = " + curDir);
         size = mb * MEGA_BYTE;

@@ -5,7 +5,12 @@ import java.io.InputStreamReader;
 
 public class IPv {
 String ipv4;
-    public String test() throws IOException, InterruptedException {
+
+    /**
+     * @return IPv4
+     * @throws IOException Could be lack of permissions
+     */
+    public String test() throws IOException {
 
         String os = System.getProperty("os.name").toLowerCase();
         String cmd = "";

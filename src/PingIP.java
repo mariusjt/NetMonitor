@@ -55,11 +55,19 @@ public class PingIP {
         return total;
     }
 
+    /**
+     * @return average ping in ms
+     * Defaults to google.com
+     */
     public int ping(){
-        runSystemCommand("ping " + "mariust.no");
+        runSystemCommand("ping " + "google.com");
         return average;
     }
 
+    /**
+     * @param ip IP to ping
+     * @return average IP in ms
+     */
     public int ping(String ip){
         runSystemCommand("ping " + ip);
         return average;

@@ -18,7 +18,6 @@ public class GUI extends JFrame {
     TrayIcon trayIcon;
     long spamTimeout;
     String ip;
-    Button getIp;
 
     public GUI() {
         super("NETWORK TESTER");
@@ -83,6 +82,9 @@ public class GUI extends JFrame {
 
     }
 
+    /**
+     * Updates ping
+     */
     private void ping() {
         ping = pinger.ping();
     }
