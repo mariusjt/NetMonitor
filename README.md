@@ -32,6 +32,11 @@ Further maintenance will be unlikely, but the project is open for development an
 Standard Javascript code style
 
 ## Screenshots
+
+![](Images/IndicatorMac.png) 
+
+ 
+
 ## Technology used
 Built with [IntelliJ](https://www.jetbrains.com/idea/), by JetBrains   
 Developed with [JDK 11](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html)     
