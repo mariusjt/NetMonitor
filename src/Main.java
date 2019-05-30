@@ -3,6 +3,7 @@ import java.awt.*;
 import java.io.IOException;
 import java.awt.event.*;
 
+/*Main for Java class GUI. Displays PING */
 public class Main extends GUI{
     public static void main(String[] args) throws IOException, InterruptedException {
 
