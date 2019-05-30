@@ -1,9 +1,8 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
 
 public class PingIP {
-    private int ping;
+    private int average;
 
     private void  runSystemCommand(String command) {
 
@@ -13,44 +12,57 @@ public class PingIP {
                     new InputStreamReader(p.getInputStream()));
 
             String s = "";
-            ArrayList<Integer> pinglist = new ArrayList<Integer>();
             // reading output stream of the command
             long start = System.currentTimeMillis();
             long end = start+5000;
             String os = System.getProperty("os.name").toLowerCase();
+            average = 0;
+            int counts = 0;
+            int total = 0;
             if (os.contains("win")){
-                while ((s = inputStream.readLine()) != null && System.currentTimeMillis() < end) {
+                while ((s = inputStream.readLine()) != null && System.currentTimeMillis() < end && !s.contains("statistics")) {
                     if (s.contains("ms")) {
                         System.out.println(s);
-                        ping = Integer.parseInt(s.substring((s.length() - 5), s.length() - 3));
-                        System.out.println(ping);
-                        pinglist.add(ping);
+                        counts++;
+                        String noString = s.substring(s.length() -5, s.length()-3);
+                        total = getTotal(counts, total, noString);
                     }
                 }
             }
             else if (os.contains("os x")) {
                 while ((s = inputStream.readLine()) != null && System.currentTimeMillis() < end) {
-                    //System.out.println(s);
                     if (s.contains("ms")) {
                         System.out.println(s);
-                        ping = Integer.parseInt(s.substring((s.length() - 9), s.length() - 7));
-                        System.out.println(ping);
-                        pinglist.add(ping);
-                        //s.regionMatches().;
+                        counts++;
+                        String noString = s.substring(s.length() -9, s.length()-7);
+                        total = getTotal(counts, total, noString);
+
                     }
                 }
             }
-            for (Object o : pinglist) {
-                System.out.println("ping = " + o);
-            }
-
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
+    private int getTotal(int counts, int total, String noString) {
+        if (noString.contains("=") || noString.contains(" ")){
+            noString = noString.substring(1);
+        }
+        total = total + Integer.parseInt(noString);
+        average = total / counts;
+        System.out.println(average);
+        return total;
+    }
+
     public int ping(){
-        runSystemCommand("ping " + "google.com");
-        return ping;
+        runSystemCommand("ping " + "mariust.no");
+        return average;
+    }
+
+    public int ping(String ip){
+        runSystemCommand("ping " + ip);
+        return average;
     }
 
 }
