@@ -1,6 +1,7 @@
+
+
 # NetMonitor
 Application for monitoring network status
-
 - DNS status
 - WAN/internet status
 - DHCP/IP status
@@ -41,7 +42,7 @@ Developed with JDK 11
 - Display number of packets going in/out at a specific scenario
 
 
-## Installation / Runing
+## Installation / Running
 Provided by a Java Main which can be run in terminal.
 
 ## Tests
@@ -53,14 +54,20 @@ To use our project run the Main within the project in terminal for MacOSX
  and run it within command promt on any windows version allowing JDK 11.
  
  ## Contribute
- #####Getting started:  
- This application is made with IntelliJ. Here is a great guide for IntelliJ: https://www.jetbrains.com/idea/documentation/ 
+ ##### Getting started:  
+ This application is made with IntelliJ. You can find a great guide for IntelliJ [here](https://www.jetbrains.com/idea/documentation/). 
+ For easier understanding of the project Syntax.
  
- #####We wish for people to contribute with:  
+ ##### We wish for people to contribute with:  
  -Improvement of functions through GUI  
  -Adding features mentioned above beneath "NetMonitor" into the 
  program which currently are not found in Features.  
  -Adding tests to the methods within the program.
  
-  
-
+ ##Credits
+ AltCtrl
+ 
+ ## License
+ GPL v2
+ CE
+ 
