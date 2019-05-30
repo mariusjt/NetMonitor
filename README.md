@@ -57,11 +57,11 @@ To use our project run the Main within the project in terminal for Mac OS X
  and run it within command prompt on any windows version allowing JDK 11.
 
  ## Contribute
- ##### Getting started:  
+ #### Getting started:  
  This application is made with IntelliJ. You can find a great guide for IntelliJ [here](https://www.jetbrains.com/idea/documentation/).
  For easier understanding of the project Syntax.
  
- ##### Community: 
+ #### Community: 
  We appreciate student contributing belonging to a student alumni among different universities around the world.
 
  ##### We wish for people to contribute with:  
