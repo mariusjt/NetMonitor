@@ -29,6 +29,28 @@ Further maintenance will be unlikely, but the project is open for development an
 Standard Javascript codestyle
 
 # Screenshots
+# Technology used
+Built with IntelleJ, by JetBrains
+Developed with JDK 11
+
+# Features
+- DHCP/IP status
+- WAN/internet status
+- Internet speed (run a speedtest on boot)
+- Adjustable parameters for checks (file sizes, timeouts)
+- Display number of packets going in/out at a specific scenario
 
 
+# Installation / Runing
+Provided by a Java Main which can be run in terminal.
+
+# Tests
+No test examples added. 
+Worked towards functionally rather than uptime/bugs
+
+# How to use 
+To use our project run the Main within the project in terminal for MacOSX
+ and run it within command promt on any windows version allowing JDK 11.
+ 
+ 
 
