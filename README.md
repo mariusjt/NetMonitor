@@ -28,8 +28,13 @@ The developers of the project felt that it would be useful to have some sort of 
 The maintenance within the project is to deliver a product concluding the subject IS-213.
 Further maintenance will be unlikely, but the project is open for development and iteration.
 
-## Code Style
-Standard Javascript code style
+## Code Standards
+Methods should be named after what they do and what they return. In camelCase.
+Use standard "get"/"set"Field names for methods, and make sure methods can return fields that are necessary for the GUI.
+
+Keep information hidden as much as possible, and only pass values with getters and setters.
+
+In the GUI class, keep all related items bunched together. I.e: Related buttosn and panels should be close, and the draw methods should be close to the element definitions.
 
 ## Screenshots
 
