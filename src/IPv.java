@@ -13,7 +13,7 @@ String ipv4;
             cmd = "ipconfig";
         }
         else if (os.contains("mac")) {
-            cmd = "ipconfig";
+            cmd = "ifconfig";
         } else { System.out.println("OS not supported, sorry");}
 
         ProcessBuilder builder = new ProcessBuilder(cmd);
