@@ -79,5 +79,5 @@ To use our project run the Main within the project in terminal for Mac OS X
  Henrik Lindseth
 
  ## License
- [GPL v2 CE](https://openjdk.java.net/legal/gplv2+ce.html?fbclid=IwAR0cV5p85miMoO4adkm5j6L0hRnxM3yFEk0fbVWY6d6uYotFhRe_MNZ0dHA)   
+ [GPL v2 CE](LICENSE)   
  
