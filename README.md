@@ -20,11 +20,11 @@ bar to show how much speed is available)
 - XML/JSON API to get data on other devices
 
 ## Motivation
-NetMonitor was created to be a part of a open source project at the University of Agder. 
-More specifically it exists as a contribution of an open source project for students in the subject "IS-213 Åpen kildekode programvare"
-to contribute as an introductary idea of the open source working method.  
+NetMonitor was created to be a part of a open source project at the University of Agder.
+More specifically it exists as a contribution of an open source project for students in the subject IS-213 OPEN SOURCE
+to contribute as an introductory idea of the open source working method.  
 The developers of the project felt that it would be useful to have some sort of tool to easily access the functions mentioned above beneath "NetMonitor".
-The maintenance within the project is to deliver a product concluding the subject IS-213. 
+The maintenance within the project is to deliver a product concluding the subject IS-213.
 Further maintenance will be unlikely, but the project is open for development and iteration.
 
 ## Code Style
@@ -32,7 +32,7 @@ Standard Javascript codestyle
 
 ## Screenshots
 ## Technology used
-Built with IntelleJ, by JetBrains
+Built with IntelliJ, by JetBrains
 Developed with JDK 11
 
 ## Features
@@ -47,28 +47,27 @@ Developed with JDK 11
 Provided by a Java Main which can be run in terminal.
 
 ## Tests
-No test examples added. 
+No test examples added.
 Worked towards functionally rather than uptime/bugs
 
-## How to use 
+## How to use
 To use our project run the Main within the project in terminal for MacOSX
  and run it within command promt on any windows version allowing JDK 11.
- 
+
  ## Contribute
  ##### Getting started:  
- This application is made with IntelliJ. You can find a great guide for IntelliJ [here](https://www.jetbrains.com/idea/documentation/). 
+ This application is made with IntelliJ. You can find a great guide for IntelliJ [here](https://www.jetbrains.com/idea/documentation/).
  For easier understanding of the project Syntax.
- 
+
  ##### We wish for people to contribute with:  
  -Improvement of functions through GUI  
- -Adding features mentioned above beneath "NetMonitor" into the 
+ -Adding features mentioned above beneath "NetMonitor" into the
  program which currently are not found in Features.  
  -Adding tests to the methods within the program.
- 
+
  ##Credits
  AltCtrl
- 
+
  ## License
  GPL v2
  CE
- 
