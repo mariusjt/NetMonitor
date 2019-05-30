@@ -7,7 +7,7 @@ import java.util.Enumeration;
 
 public class Main {
     public static void main(String[] args) throws IOException, InterruptedException {
-        System.out.println("Starting server!");
+        /*System.out.println("Starting server!");
         Server rx = new Server(3333);
 
         GUI bucky = new GUI();
@@ -15,6 +15,8 @@ public class Main {
         bucky.setSize(275, 180);
         bucky.setVisible(true);
 
-
+*/
+        IPv ip = new IPv();
+        ip.test();
     }
 }

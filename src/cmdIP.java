@@ -1,11 +1,12 @@
 import java.io.*;
 import java.util.Arrays;
-
+/*
 public class cmdIP {
     public static void main(String [] args) throws IOException {
 
+        String os = System.getProperty("os.name").toLowerCase();
         String[] command = {"ipconfig", "/all", "|", "find", "\"IPv\""};
-        ProcessBuilder probuilder = new ProcessBuilder( command );
+        ProcessBuilder probuilder = new ProcessBuilder(command);
         //final ProcessBuilder directory = probuilder.directory(new File("C:\\Users\\LUDAPCMASTERRACE"));
 
         Process process = probuilder.start();
@@ -20,7 +21,11 @@ public class cmdIP {
         while ((line = br.readLine()) != null) {
             System.out.println(line);
         }
-
+        if (os.contains("win")) {
+            while ((s = inputStream.readLine()) != null && System.currentTimeMillis() < end) {
+                if (s.contains("ping")) {
+                    System.out.println(s);
+                }
         //Wait to get exit value
         try {
             int exitValue = process.waitFor();
@@ -33,6 +38,6 @@ public class cmdIP {
     }
 
 }
-
+*/
 //ipconfig /all | find "IPv"
 //ipconfig /all | find "DHCP Server"
