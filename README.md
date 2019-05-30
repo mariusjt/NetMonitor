@@ -71,8 +71,7 @@ To use our project run the Main within the project in terminal for Mac OS X
  -Adding tests to the methods within the program.
 
  ## Credits   
- #### AltUnderCtrl   
- ##### Members:   
+ #### AltUnderCtrl:      
  Jostein Våga Rygg   
  Joakim Schjølberg   
  Marius Tjøstheim   
