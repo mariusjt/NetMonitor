@@ -2,6 +2,9 @@ import java.io.*;
 import java.net.Socket;
 import java.util.ArrayList;
 
+/**
+ * Sends files to calculate transfer speed
+ */
 public class Client {
 
     private Socket socket;

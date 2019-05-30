@@ -1,6 +1,9 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
+/**
+ * Returns Ping using standard OS terminal
+ */
 public class PingIP {
     private int average;
 

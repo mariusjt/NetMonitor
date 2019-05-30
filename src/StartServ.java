@@ -1,5 +1,8 @@
 import java.io.IOException;
 
+/**
+ * Starts Server object for receiving files
+ */
 public class StartServ {
 
     /**

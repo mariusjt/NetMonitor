@@ -3,6 +3,9 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Random;
 
+/**
+ * Generates or returns File object
+ */
 public class FileGen {
 String curDir = System.getProperty("user.dir");
 int size;

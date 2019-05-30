@@ -10,9 +10,9 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-
-
-//Creates a GUI class extended on Jframe
+/**
+ * Creates a GUI and starts objects as needed
+ */
 public class GUI extends JFrame {
     Button p;
     int ping;

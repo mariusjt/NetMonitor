@@ -3,6 +3,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
+/**
+ * Returns local IPv4 address
+ */
 public class IPv {
 String ipv4;
 
