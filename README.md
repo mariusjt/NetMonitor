@@ -41,10 +41,10 @@ In the GUI class, keep all related items bunched together. I.e: Related buttosn 
 
 ## Technology used
 Built with [IntelliJ](https://www.jetbrains.com/idea/), by JetBrains   
-Developed with [JDK 11](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html)     
+Developed with [OpenJDK 11](https://openjdk.java.net/)     
 Github Desktop & GitKraken
 
-## Features
+## Planned Features
 - DHCP/IP status
 - WAN/internet status
 - Internet speed (run a speedtest on boot)
