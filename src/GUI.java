@@ -1,69 +1,30 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.SystemTray;
-import java.awt.TrayIcon;
-import java.io.File;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
+import java.io.IOException;
 
 
 public class GUI extends JFrame {
-    Button p;
-    int ping;
-    PingIP pinger;
-    TrayIcon trayIcon;
-    long spamTimeout;
+    private JLabel item1;
+    private JLabel pingviewer;
+    private JLabel speedtest;
 
     public GUI() {
         super("NETWORK TESTER");
-        pinger = new PingIP();
         setLayout(new FlowLayout());
-        TextField pingbox = new TextField(20);
-        pingbox.setText("not checked");
-        add(pingbox);
-        p = new Button("Click Here");
-        p.addActionListener(new ActionListener(){
-            public void actionPerformed(ActionEvent e){
-                ping();
-                pingbox.setText("Ping: " + ping + "ms");
-            }
-        });
-        add(p);
-        SystemTray tray = SystemTray.getSystemTray();
-        Image image = Toolkit.getDefaultToolkit().getImage(System.getProperty("user.dir") + File.separator + "icon.png");
-
-        trayIcon = new TrayIcon(image, "Tray Demo");
-        trayIcon.setImageAutoSize(true);
-        trayIcon.setToolTip("TESTING!!!!");
+        Client client = new Client("127.0.0.1", 3333);
         try {
-            tray.add(trayIcon);
-        } catch (AWTException e) {
+            client.speedTest(1);
+        } catch (IOException e) {
             e.printStackTrace();
         }
-        //Runs pingcheck every 5 seconds
-        ScheduledExecutorService ses = Executors.newSingleThreadScheduledExecutor();
-        ses.scheduleAtFixedRate(new Runnable() {
-
-            @Override
-            public void run() {
-                ping();
-                if (ping > 5){
-                    if (System.currentTimeMillis() > spamTimeout) {
-                        /*Display a warning if ping is higher than preferred.*/
-                        trayIcon.displayMessage("Ping warning", "Your ping is: " + ping, TrayIcon.MessageType.INFO);
-                        spamTimeout = System.currentTimeMillis() + 10000;
-                    }
-
-                }
-            }
-        }, 0, 5, TimeUnit.SECONDS);
-
-    }
-
-    private void ping() {
-        ping = pinger.ping();
+        long speed = client.getSpeed();
+        PingIP pinger = new PingIP();
+        item1 = new JLabel("Hover over this text to show ping");
+        item1.setToolTipText("Your ping is: " + pinger.ping());
+        add(item1);
+        pingviewer = new JLabel("PING: " + pinger.ping() + "ms" );
+        add(pingviewer);
+        speedtest = new JLabel("Speed: " + speed + "KB/s");
+        add(speedtest);
     }
 }
