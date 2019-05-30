@@ -4,6 +4,7 @@ import java.io.IOException;
 
 /**
  * Opens GUI
+ * Runs the program when run in terminal
  */
 public class Main {
     public static void main(String[] args) throws IOException, InterruptedException {

@@ -10,7 +10,9 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-//Creates a GUI class
+
+
+//Creates a GUI class extended on Jframe
 public class GUI extends JFrame {
     Button p;
     int ping;
@@ -18,7 +20,7 @@ public class GUI extends JFrame {
     TrayIcon trayIcon;
     long spamTimeout;
     String ip;
-
+    //Defines layout for the GUI
     public GUI() {
         super("NETWORK TESTER");
         pinger = new PingIP();
@@ -63,7 +65,8 @@ public class GUI extends JFrame {
         }
         ScheduledExecutorService ses = Executors.newSingleThreadScheduledExecutor();
         ses.scheduleAtFixedRate(new Runnable() {
-            /*Display a warning if ping is higher than preferred.*/
+
+            //Display a warning if ping is higher than preferred.
             @Override
             public void run() {
                 ping();
@@ -76,6 +79,8 @@ public class GUI extends JFrame {
 
                 }
             }
+            //Checks time period.
+
         }, 0, 5, TimeUnit.SECONDS);
 
     }
