@@ -37,9 +37,7 @@ Keep information hidden as much as possible, and only pass values with getters a
 In the GUI class, keep all related items bunched together. I.e: Related buttosn and panels should be close, and the draw methods should be close to the element definitions.
 
 ## Screenshots
-
-![](Images/Screenshots/GUI.png)
- 
+![](Images/Screenshots/GUI.png) 
 
 ## Technology used
 Built with [IntelliJ](https://www.jetbrains.com/idea/), by JetBrains   
