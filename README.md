@@ -33,7 +33,7 @@ Standard Javascript code style
 
 ## Screenshots
 ## Technology used
-Built with IntelliJ, by JetBrains   
+Built with [IntelliJ](https://www.jetbrains.com/idea/), by JetBrains   
 Developed with JDK 11     
 Github Desktop & GitKraken
 
