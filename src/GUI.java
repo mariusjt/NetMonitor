@@ -46,6 +46,7 @@ public class GUI extends JFrame {
         }
         ScheduledExecutorService ses = Executors.newSingleThreadScheduledExecutor();
         ses.scheduleAtFixedRate(new Runnable() {
+            /*Display a warning if ping is higher than preferred.*/
             @Override
             public void run() {
                 ping();
