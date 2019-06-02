@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
  */
 public class PingIP {
     private int average;
-
+    //  Checks speed of the network currently connected within the DB desired Database.
     private void  runSystemCommand(String command) {
 
         try {
@@ -22,6 +22,7 @@ public class PingIP {
             average = 0;
             int counts = 0;
             int total = 0;
+            // Checks if the user is operating on Windows Operating system.
             if (os.contains("win")){
                 while ((s = inputStream.readLine()) != null && System.currentTimeMillis() < end && !s.contains("statistics")) {
                     if (s.contains("ms")) {
@@ -32,6 +33,7 @@ public class PingIP {
                     }
                 }
             }
+            // Checks if the user is operating on Mac OS X Operating system.
             else if (os.contains("os x")) {
                 while ((s = inputStream.readLine()) != null && System.currentTimeMillis() < end) {
                     if (s.contains("ms")) {
@@ -47,7 +49,7 @@ public class PingIP {
             e.printStackTrace();
         }
     }
-
+    // Method that calculates PING values.
     private int getTotal(int counts, int total, String noString) {
         if (noString.contains("=") || noString.contains(" ")){
             noString = noString.substring(1);

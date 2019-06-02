@@ -3,9 +3,14 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
+<<<<<<< HEAD
 /**
  * Returns local IPv4 address
  */
+=======
+//returns the IPv4 through Terminal(Mac OS X) and Command Prompt(Windows)
+
+>>>>>>> master
 public class IPv {
 String ipv4;
 
@@ -13,8 +18,12 @@ String ipv4;
      * @return IPv4
      * @throws IOException Could be lack of permissions
      */
+
     public String test() throws IOException {
+
         // Specifies which string to be used.
+
+
         String os = System.getProperty("os.name").toLowerCase();
         String cmd = "";
         if (os.contains("win")) {
@@ -29,6 +38,8 @@ String ipv4;
         Process process = builder.start();
         InputStream is = process.getInputStream();
         BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+
+        //Filters out the result from ipconfig or ifconfig then fine tunes the output
 
         String s;
         // IPv4 retriever for mac.
