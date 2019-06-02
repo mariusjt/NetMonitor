@@ -3,14 +3,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-<<<<<<< HEAD
 /**
  * Returns local IPv4 address
  */
-=======
-//returns the IPv4 through Terminal(Mac OS X) and Command Prompt(Windows)
 
->>>>>>> master
 public class IPv {
 String ipv4;
 

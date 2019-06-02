@@ -9,7 +9,7 @@ import java.util.Random;
 public class FileGen {
 String curDir = System.getProperty("user.dir");
 int size;
-
+    //String that is printed to file
     private static final String ALPHA_NUM = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     private static final int MEGA_BYTE = 1024*1024;
 
@@ -23,6 +23,7 @@ int size;
         System.out.println("cur dir = " + curDir);
         size = mb * MEGA_BYTE;
         Random r = new Random();
+        //Creates a random string from the characters of ALPHA_NUM
         String random = "";
         for (int i = 0; i < 150; i++) {
             random = random + ALPHA_NUM.charAt(r.nextInt(ALPHA_NUM.length()));
@@ -31,13 +32,12 @@ int size;
         File file = new File(curDir + File.separator + "test" + mb + "MB.txt");
         if( file.createNewFile()) {
             FileWriter fw = new FileWriter(file);
-            int i = 1000;
             int j = 0;
             while(file.length() < size){
                 fw.write(random + "\n");
                 j++;
             }
-            System.out.println("printed : " + j);
+            System.out.println("Printed : " + j +" lines to file");
             fw.flush();
             fw.close();
         }

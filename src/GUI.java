@@ -52,7 +52,6 @@ public class GUI extends JFrame {
         add(tfip);
         add(ipbutton);
         SystemTray tray = SystemTray.getSystemTray();
-        //Image image = Toolkit.getDefaultToolkit().createImage("icon.png");
         Image image = Toolkit.getDefaultToolkit().getImage(System.getProperty("user.dir") + File.separator + "icon.png");
 
         trayIcon = new TrayIcon(image, "Tray Demo");
@@ -63,6 +62,7 @@ public class GUI extends JFrame {
         } catch (AWTException e) {
             e.printStackTrace();
         }
+        //Runs ping() every 5 seconds
         ScheduledExecutorService ses = Executors.newSingleThreadScheduledExecutor();
         ses.scheduleAtFixedRate(new Runnable() {
 

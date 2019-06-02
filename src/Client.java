@@ -1,6 +1,5 @@
 import java.io.*;
 import java.net.Socket;
-import java.util.ArrayList;
 
 /**
  * Sends files to calculate transfer speed
@@ -16,10 +15,11 @@ public class Client {
     private boolean tested;
 
     /**
+     * Tries to connect to the target IP and port.
+     * A server must be running and ready to accept the connection.
      * @param host Target IP
      * @param port Target port
      */
-    // Creates a client storing host port
     Client(String host, int port)  {
         System.out.println("Starting file transfer client!");
         try {
