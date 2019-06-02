@@ -4,6 +4,7 @@
 # NetMonitor
 ![](Images/LogoAC.png)   
 #### Application for monitoring network status
+The goal of this project is to create an app that can show different metrics and information about a network.
 - DNS status
 - WAN/internet status
 - DHCP/IP status
