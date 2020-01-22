@@ -14,6 +14,10 @@ import java.util.concurrent.TimeUnit;
  * Creates a GUI and starts objects as needed
  */
 public class GUI extends JFrame {
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     Button p;
     int ping;
     PingIP pinger;
@@ -26,7 +30,7 @@ public class GUI extends JFrame {
         pinger = new PingIP();
         setLayout(new FlowLayout());
         TextField pingbox = new TextField(20);
-        pingbox.setText("not checked");
+        pingbox.setText("Ping: not checked");
         add(pingbox);
         p = new Button("Click Here");
         p.addActionListener(new ActionListener(){
